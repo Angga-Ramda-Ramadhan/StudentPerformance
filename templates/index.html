@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Performance Predictor</title>
+    <link rel="stylesheet" href="static\css\index.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Student Performance Predictor</h1>
+        <form id="prediction-form">
+            <label for="study_hours">Study Hours:</label>
+            <input type="number" id="study_hours" step="0.1" placeholder="e.g., 4.5" required>
+            
+            <label for="sleep_hours">Sleep Hours:</label>
+            <input type="number" id="sleep_hours" step="0.1" placeholder="e.g., 7.0" required>
+            
+            <label for="socioeconomic_score">Socioeconomic Score (0-1):</label>
+            <input type="number" id="socioeconomic_score" step="0.01" placeholder="e.g., 0.75" required>
+            
+            <label for="attendance">Attendance (%):</label>
+            <input type="number" id="attendance" step="0.1" placeholder="e.g., 90.0" required>
+            
+            <button type="submit" id="predictButton">Predict</button>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="static\js\index.js"></script>
+</body>
+</html>
