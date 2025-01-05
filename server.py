@@ -1,29 +1,26 @@
 from flask import Flask, render_template, request, jsonify
 import mlflow.pyfunc
 import mlflow
+import pandas as pd
 
 app = Flask(__name__)
-
 # Set tracking URI ke server MLflow yang berjalan di port 8080
 mlflow.set_tracking_uri("http://localhost:8080")
-
-
 # Load model from MLflow
 model_uri = "runs:/cfb987e098e54119bdab9bb99bcab877/With tuning"
 model = mlflow.pyfunc.load_model(model_uri)
+
 
 @app.route('/')
 def home():
     return render_template('index.html')
 
-import pandas as pd
 
 @app.route('/predict', methods=['POST'])
 def predict():
     try:
         # Ambil data dari request JSON
         data = request.json
-
         # Validasi keberadaan semua key yang diperlukan
         required_keys = ['Socioeconomic Score', 'Study Hours', 'Sleep Hours', 'Attendance (%)']
         if not all(key in data for key in required_keys):
@@ -56,11 +53,9 @@ def predict():
         # Tangani error internal
         return jsonify({'error': str(e)}), 500
 
-
     except Exception as e:
         # Tangani error internal
         return jsonify({'error': str(e)}), 500
-
 
 
 if __name__ == '__main__':

@@ -1,0 +1,18 @@
+[flake8]
+exclude = 
+    Config/,
+    Assets/
+    __pycache__,
+    .git,
+    mlartifacts/,
+    mlruns/,
+    static/,
+    templates/,
+    README.md,
+    requirements.txt,
+    modelling.ipynb,
+    venv/,
+    .gitignore,
+    utils/__pycache__,
+    utils/__init__.py
+max-line-length = 110
