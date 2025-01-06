@@ -13,5 +13,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Expose port Flask
 EXPOSE 5000
 
-# Jalankan server Flask
+# Jalankan server flask
 CMD ["python", "server.py"]
