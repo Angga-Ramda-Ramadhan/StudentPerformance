@@ -20,8 +20,8 @@ class TestFlaskApp(unittest.TestCase):
 
     def test_predict_valid_input(self):
         valid_input = {
-            "Socioeconomic Score": 0.9,
-            "Study Hours": 7.5,
+            "Socioeconomic Score": 0.8,
+            "Study Hours": 8.5,
             "Sleep Hours": 8,
             "Attendance (%)": 90
         }
