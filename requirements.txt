@@ -16,6 +16,7 @@ decorator==5.1.1
 Deprecated==1.2.15
 docker==7.1.0
 executing==2.1.0
+flake8==7.1.1
 Flask==3.1.0
 fonttools==4.55.3
 gitdb==4.0.11
@@ -41,6 +42,7 @@ Markdown==3.7
 MarkupSafe==3.0.2
 matplotlib==3.10.0
 matplotlib-inline==0.1.7
+mccabe==0.7.0
 mlflow==2.19.0
 mlflow-skinny==2.19.0
 nest-asyncio==1.6.0
@@ -60,6 +62,8 @@ pure_eval==0.2.3
 pyarrow==18.1.0
 pyasn1==0.6.1
 pyasn1_modules==0.4.1
+pycodestyle==2.12.1
+pyflakes==3.2.0
 Pygments==2.18.0
 pyparsing==3.2.0
 python-dateutil==2.9.0.post0
