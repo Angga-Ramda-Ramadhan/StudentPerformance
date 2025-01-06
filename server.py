@@ -5,7 +5,7 @@ import pandas as pd
 
 app = Flask(__name__)
 # Set tracking URI ke server MLflow yang berjalan di port 8080
-mlflow.set_tracking_uri("http://localhost:8080")
+mlflow.set_tracking_uri("http://127.0.0.1:8080")
 # Load model from MLflow
 model_uri = "runs:/cfb987e098e54119bdab9bb99bcab877/With tuning"
 model = mlflow.pyfunc.load_model(model_uri)
