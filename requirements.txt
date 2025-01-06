@@ -1,4 +1,1 @@
-pandas
-mlflow
-flask
-flake8
+
