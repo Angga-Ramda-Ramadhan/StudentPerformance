@@ -10,7 +10,7 @@ COPY . /app
 # Install dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Expose port Flask
+# Expose port flask
 EXPOSE 5000
 
 # Jalankan server Flask
