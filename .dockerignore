@@ -2,3 +2,4 @@ venv/
 Assets/
 modelling.ipynb
 utils/
+__pycache__/

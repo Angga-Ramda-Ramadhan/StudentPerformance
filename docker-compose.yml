@@ -1,0 +1,21 @@
+version: '3.8'
+
+services:
+  mlflow:
+    image: mlflow:latest
+    container_name: mlflow
+    ports:
+      - "8080:8080"  # Ekspos port MLflow ke host
+    volumes:
+      - ./mlruns:/mlflow/mlruns  # Simpan model ke volume yang bisa diakses Flask
+
+  flask:
+    build:
+      context: .
+    container_name: flask
+    ports:
+      - "5000:5000"  # Ekspos Flask ke host
+    environment:
+      - MLFLOW_TRACKING_URI=http://mlflow:8080  # Arahkan Flask ke MLflow
+    volumes:
+      - ./mlruns:/mlflow/mlruns  # Akses direktori yang sama dengan MLflow
