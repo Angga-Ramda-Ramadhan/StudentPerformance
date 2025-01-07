@@ -1,0 +1,16 @@
+aliases: []
+creation_timestamp: 1735679012702
+current_stage: None
+description: ''
+last_updated_timestamp: 1735679012702
+name: rf_notune
+run_id: bb68617b04fa468fa614bbb3b9744867
+run_link: ''
+source: mlflow-artifacts:/436989784192711603/bb68617b04fa468fa614bbb3b9744867/artifacts/no
+  tuning
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/436989784192711603/bb68617b04fa468fa614bbb3b9744867/artifacts/no
+  tuning
+user_id: null
+version: 2

@@ -1,0 +1,16 @@
+aliases: []
+creation_timestamp: 1735678722058
+current_stage: None
+description: ''
+last_updated_timestamp: 1735678722058
+name: rf_withtune
+run_id: 9f54c0d35fa5458dbdec47bbb29bdaf3
+run_link: ''
+source: mlflow-artifacts:/436989784192711603/9f54c0d35fa5458dbdec47bbb29bdaf3/artifacts/With
+  tuning
+status: READY
+status_message: null
+storage_location: mlflow-artifacts:/436989784192711603/9f54c0d35fa5458dbdec47bbb29bdaf3/artifacts/With
+  tuning
+user_id: null
+version: 1

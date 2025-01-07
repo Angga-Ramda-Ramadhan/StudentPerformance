@@ -5,7 +5,7 @@ import pandas as pd
 
 app = Flask(__name__)
 # Set tracking URI dari environment variable
-tracking_uri = "http://mlflow:8080"  # Arahkan ke service MLflow di docker-compose
+tracking_uri = "http://localhost:8080"  # Arahkan ke service MLflow di docker-compose
 mlflow.set_tracking_uri(tracking_uri)
 model_uri = "runs:/cfb987e098e54119bdab9bb99bcab877/With tuning"
 model = mlflow.pyfunc.load_model(model_uri)

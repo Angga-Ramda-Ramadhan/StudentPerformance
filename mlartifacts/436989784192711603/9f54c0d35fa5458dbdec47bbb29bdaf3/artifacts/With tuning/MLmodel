@@ -1,0 +1,32 @@
+artifact_path: With tuning
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.4
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.6.0
+mlflow_version: 2.19.0
+model_size_bytes: 2719825
+model_uuid: 33df9289ea654c32ac8cc5c3585aa6b2
+run_id: 9f54c0d35fa5458dbdec47bbb29bdaf3
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "double", "name": "Socioeconomic Score", "required": true}, {"type":
+    "double", "name": "Study Hours", "required": true}, {"type": "double", "name":
+    "Sleep Hours", "required": true}, {"type": "double", "name": "Attendance (%)",
+    "required": true}]'
+  outputs: '[{"type": "tensor", "tensor-spec": {"dtype": "float64", "shape": [-1]}}]'
+  params: null
+utc_time_created: '2024-12-31 20:58:35.557887'
