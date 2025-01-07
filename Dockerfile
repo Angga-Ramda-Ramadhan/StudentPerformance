@@ -11,7 +11,8 @@ COPY . /app
 RUN pip install --no-cache-dir -r requirements.txt
 
 # Expose port flask
-EXPOSE 5000
+EXPOSE 5000 8080
 
 # Jalankan server Flask
-CMD ["python", "server.py"]
+CMD mlflow server --host 0.0.0.0 --port 8080 & python server.py
+
