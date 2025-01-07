@@ -1,0 +1,16 @@
+artifact_uri: mlflow-artifacts:/436989784192711603/9f54c0d35fa5458dbdec47bbb29bdaf3/artifacts
+deleted_time: 1735678781686
+end_time: 1735678722092
+entry_point_name: ''
+experiment_id: '436989784192711603'
+lifecycle_stage: deleted
+run_id: 9f54c0d35fa5458dbdec47bbb29bdaf3
+run_name: With HP Tuning
+run_uuid: 9f54c0d35fa5458dbdec47bbb29bdaf3
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1735678715409
+status: 3
+tags: []
+user_id: ASUS

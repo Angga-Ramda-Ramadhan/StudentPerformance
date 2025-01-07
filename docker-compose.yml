@@ -7,7 +7,8 @@ services:
     ports:
       - "8080:8080"  # Ekspos port MLflow ke host
     volumes:
-      - ./mlruns:/mlflow/mlruns  # Simpan model ke volume yang bisa diakses Flask
+      - ./mlruns:/mlruns
+      - ./mlartifact:/mlartifact
 
   flask:
     build:
